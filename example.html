@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Add to Furkot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      body {
+        font: 14px sans-serif;
+        padding: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add to Furkot</h1>
+    <button id="add-stops">Add 2 stops to Furkot trip!</button>
+    <script src="build/build.js"></script>
+    <script>
+      document.getElementById('add-stops').addEventListener('click', function() {
+        var furkotTrip = require('furkot-trip');
+        var stops = [
+          {
+            name: 'Time Square',
+            coordinates: {
+              lat: 40.7577,
+              lon: -73.9857
+            }
+          }, {
+            name: 'Metropolitan Museum',
+            coordinates: {
+              lat: 40.7789,
+              lon: -73.9637
+            }
+          }
+        ];
+        var nyTrip = furkotTrip();
+
+        nyTrip.plan(stops);
+      })
+    </script>
+  </body>
+</html>
