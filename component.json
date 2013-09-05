@@ -1,0 +1,14 @@
+{
+  "name": "furkot-trip",
+  "repo": "code42day/furkot-trip",
+  "description": "Adds stops to Furkot - online trip planner.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
