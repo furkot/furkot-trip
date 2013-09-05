@@ -1,6 +1,11 @@
 
+all: lint build
+
 build: components index.js
 	@component build --dev
+
+lint:
+	@jshint index.js 
 
 components: component.json
 	@component install --dev
@@ -8,4 +13,4 @@ components: component.json
 clean:
 	rm -fr build components
 
-.PHONY: clean
+.PHONY: clean lint

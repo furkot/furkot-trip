@@ -2,13 +2,8 @@
   "undef": "true",
   "unused": "true",
   "laxbreak": "true",
-  "es5": "true",
   "globals": {
-    "console": false,
-    "exports": false,
-    "process": false,
     "require": false,
-    "module": false,
-    "__dirname": false
+    "module": false
   }
 }
