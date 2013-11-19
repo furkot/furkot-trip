@@ -1,4 +1,9 @@
 
+0.2.0 / 2013-11-19 
+==================
+
+ * use _top or _blank target depending on locationbar visibility
+
 0.1.0 / 2013-09-05 
 ==================
 
