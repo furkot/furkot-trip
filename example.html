@@ -11,30 +11,32 @@
   </head>
   <body>
     <h1>Add to Furkot</h1>
-    <button id="add-stops">Add 2 stops to Furkot trip!</button>
+    <button id="add-stops">POST: Add 2 stops to Furkot trip!</button>
+    <br><br>
+    <a id="a-add-stops">GET: Add 2 stops to Furkot trip!</a>
     <script src="build/build.js"></script>
     <script>
+	    var furkotTrip = require('furkot-trip');
+	    var stops = [
+	      {
+	        name: 'Time Square',
+	        coordinates: {
+	          lat: 40.7577,
+	          lon: -73.9857
+	        }
+	      }, {
+	        name: 'Metropolitan Museum',
+	        coordinates: {
+	          lat: 40.7789,
+	          lon: -73.9637
+	        }
+	      }
+	    ];
+	    var nyTrip = furkotTrip();
+      document.getElementById('a-add-stops').setAttribute('href', nyTrip.getUrl(stops));
       document.getElementById('add-stops').addEventListener('click', function() {
-        var furkotTrip = require('furkot-trip');
-        var stops = [
-          {
-            name: 'Time Square',
-            coordinates: {
-              lat: 40.7577,
-              lon: -73.9857
-            }
-          }, {
-            name: 'Metropolitan Museum',
-            coordinates: {
-              lat: 40.7789,
-              lon: -73.9637
-            }
-          }
-        ];
-        var nyTrip = furkotTrip();
-
         nyTrip.plan(stops);
-      })
+      });
     </script>
   </body>
 </html>
