@@ -41,8 +41,6 @@ var nyTrip = furkotTrip();
 nyTrip.plan(stops);
 ```
 
-See how it works with [Nooreq].
-
 ### .getUrl(stops)
 
 Returns URL to [Furkot] with stops encoded in the query part. The URL will redirect user to [Furkot] and add stops to an existing trip or a new trip.
@@ -54,5 +52,4 @@ See how it works with [Liftie].
   MIT
 
 [Furkot]: https://trips.furkot.com
-[Nooreq]: http://nooreq.com
 [Liftie]: http://liftie.info
