@@ -1,0 +1,26 @@
+{
+  "name": "furkot-trip",
+  "version": "0.4.0",
+  "description": "Adds stops to Furkot - online trip planner.",
+  "scripts": {
+    "test": "make check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code42day/furkot-trip.git"
+  },
+  "keywords": [
+    "browser",
+    "trip",
+    "planner"
+  ],
+  "author": "Damian Krzeminski <pirxpilot@code42day.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code42day/furkot-trip/issues"
+  },
+  "files": [
+    "index.js"
+  ]
+
+}

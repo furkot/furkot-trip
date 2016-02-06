@@ -5,6 +5,10 @@
 
 ## Installation
 
+  Install with npm:
+
+    $ npm install --save furkot-trip
+
   Install with [component(1)](http://component.io):
 
     $ component install code42day/furkot-trip
