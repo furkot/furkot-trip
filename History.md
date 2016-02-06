@@ -1,4 +1,9 @@
 
+0.5.0 / 2016-02-05
+==================
+
+ * use browserify (instead of component) to build furkot-trip
+
 0.4.0 / 2014-01-18
 ==================
 
