@@ -1,16 +1,21 @@
+PROJECT=furkot-trip
 
-all: lint build
+all: lint compile
 
-build: components index.js
-	@component build --dev
+check: lint
+
+build:
+	mkdir $@
+
+build/build.js:	index.js | build
+	browserify --require ./index.js:$(PROJECT) --outfile $@
+
+compile: build/build.js
 
 lint:
-	@jshint index.js 
-
-components: component.json
-	@component install --dev
+	jshint index.js
 
 clean:
 	rm -fr build components
 
-.PHONY: clean lint
+.PHONY: clean lint compile
