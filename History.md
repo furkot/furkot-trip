@@ -1,4 +1,10 @@
 
+1.0.0 / 2024-01-13
+==================
+
+ * change name to @furkot/trip
+ * replace browserify with esbuild
+
 0.5.0 / 2016-02-05
 ==================
 
