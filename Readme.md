@@ -1,5 +1,6 @@
+[![NPM version][npm-image]][npm-url]
 
-# furkot-trip
+# @furkot/trip
 
   Adds stops to [Furkot] - online trip planner.
 
@@ -7,11 +8,11 @@
 
   Install with npm:
 
-    $ npm install --save furkot-trip
+    $ npm install --save @furkot/trip
 
   Install with [component(1)](http://component.io):
 
-    $ component install code42day/furkot-trip
+    $ component install code42day/@furkot/trip
 
 ## API
 
@@ -24,7 +25,7 @@ logged in she will be asked to sign in before selecting a trip (or creating a ne
 `duration` (in milliseconds). Only `name` and `coordinates` are required.
 
 ```javascript
-var furkotTrip = require('furkot-trip');
+var furkotTrip = require('@furkot/trip');
 var stops = [
   {
     name: 'Time Square',
@@ -57,3 +58,6 @@ See how it works with [Liftie].
 
 [Furkot]: https://trips.furkot.com
 [Liftie]: http://liftie.info
+
+[npm-image]: https://img.shields.io/npm/v/@furkot/trip
+[npm-url]: https://npmjs.org/package/@furkot/trip
