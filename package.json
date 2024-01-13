@@ -15,5 +15,9 @@
   "license": "MIT",
   "files": [
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "@pirxpilot/jshint": "~3",
+    "esbuild": "^0.19.11"
+  }
 }
