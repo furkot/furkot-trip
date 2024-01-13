@@ -10,10 +10,6 @@
 
     $ npm install --save @furkot/trip
 
-  Install with [component(1)](http://component.io):
-
-    $ component install code42day/@furkot/trip
-
 ## API
 
 ### .plan(stops)
